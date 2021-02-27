@@ -5,6 +5,9 @@
 	font-weight: normal;
 	font-style: normal;
 }
+* {
+    box-sizing: border-box;
+}
 body {
     font-family: 'myfont';
 }
@@ -14,7 +17,7 @@ body {
     clear: both;
 }
 .center {
-    width: 1200px;
+    max-width: 1000px;
     margin: 0 auto;
 }
 .logo {
@@ -32,10 +35,44 @@ nav > ul > li > a {
     margin-left: 50px;
 }
 nav ul li a:hover {
-    color: #d44a26;
+    color: #d44a26;;
 }
-/* h1 {
-    font-size: 36px;
+.li1 {
+    border-bottom: 2px solid  #2d89ef;
+}
+.li2 {
+    border-bottom: 2px solid #603cba;
+}
+.li3 {
+    border-bottom: 2px solid #01a31c;
+}
+.li4 {
+    border-bottom: 2px solid #d44a26;
+}
+.li5 {
+    border-bottom: 2px solid #f0a427;;
+}
+h1 {
     color: #595756;
+    font-size: 36px;
     font-weight: 300;
-} */
+    float: left;
+}
+.downloadprice {
+    width: 229px;
+    height: 38px;
+    background-color: #0064cd;
+    border: none;
+    color: white;
+    text-decoration: underline;
+    cursor: pointer;
+    outline: inherit;
+    float: left;
+}
+input {
+    width: 229px;
+    height: 38px;
+    padding-left: 15px;
+    border: 1px solid #cccccc;
+    outline: inherit;
+}

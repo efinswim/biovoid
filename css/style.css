@@ -54,7 +54,7 @@ table {
 	border-spacing: 0;
 }
 body {
-    font-family: 'myfont';
+    font-family: "Segoe UI";
     max-width: 1000px;
     margin: 0 auto;
 }
@@ -264,5 +264,59 @@ input[type=search] {
     float: right;
     top: 24px;
 }
-.sect2 {
+.mainproduct {
+    margin-top: 50px;
+}
+.mainproduct > h2 {
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 50px;
+}
+.greencontainer {
+    border: 1px solid #cccccc;
+    border-left: 19px solid #00a300;
+}
+.greencontainer > h2 {
+    color: #00a300;
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 50px;
+}
+.greencontainer > p {
+    font-size: 14px;
+    line-height: 18px;
+}
+.yellowcontainer {
+    border: 1px solid #cccccc;
+    border-left: 19px solid #ffc40d;
+}
+.yellowcontainer > h2 {
+    color: #ffc40d;
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 50px;
+}
+.yellowcontainer > p {
+    font-size: 14px;
+    line-height: 18px;
+}
+.bluecontainer {
+    border: 1px solid #cccccc;
+    border-left: 19px solid #2d89ef;
+}
+.bluecontainer > h2 {
+    color: #2d89ef;
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 50px;
+}
+.bluecontainer > p {
+    font-size: 14px;
+    line-height: 18px;
+}
+.mainsect {
+    margin-top: 25px;
+    padding-bottom: 10px;
+    padding-left: 30px;
+    padding-right: 25px;
 }

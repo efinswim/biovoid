@@ -87,19 +87,19 @@ nav ul li a:hover {
     color: #d44a26;
 }
 .li1 {
-    border-bottom: 2px solid  #2d89ef;
+    border-bottom: 1px solid  #2d89ef;
 }
 .li2 {
-    border-bottom: 2px solid #603cba;
+    border-bottom: 1px solid #603cba;
 }
 .li3 {
-    border-bottom: 2px solid #01a31c;
+    border-bottom: 1px solid #01a31c;
 }
 .li4 {
-    border-bottom: 2px solid #d44a26;
+    border-bottom: 1px solid #d44a26;
 }
 .li5 {
-    border-bottom: 2px solid #f0a427;
+    border-bottom: 1px solid #f0a427;
 }
 main {
     padding-top: 25px;
@@ -111,7 +111,7 @@ main {
     float: left;
 }
 .downloadprice {
-    margin-left: 30px;
+    margin-left: 81px;
     width: 229px;
     height: 38px;
     background-color: #0064cd;
@@ -123,7 +123,7 @@ main {
     text-align: left;
 }
 input[type=search] {
-    margin-left: 53px;
+    margin-left: 27px;
     background-color: white;
     background-image: url('../images/search.png');
     background-position: 95%;
@@ -350,7 +350,6 @@ input[type=search] {
     background-color: #f1f1f1;
     padding-left: 17px;
     padding-top: 15px;
-    max-height: 600px;
 }
 .selectfooter {
     width: 317px;
@@ -392,11 +391,11 @@ footer input {
     border: 2px solid #bababa;
     background-color: #ffffff;
     outline: inherit;
+    color: #000000;
     font-family: "Segoe UI";
     font-size: 14px;  
     font-weight: 400;
     line-height: 14px;
-    color: #000000;
 }
 footer textarea {
     border: 2px solid #bababa;
@@ -427,4 +426,6 @@ footer textarea {
     padding-left: 17px;
     font-size: 12px;
     padding-top: 15px;
+    height: 40px;
+    margin-bottom: 10px;
 }

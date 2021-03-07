@@ -272,6 +272,12 @@ input[type=search] {
     font-weight: 300;
     line-height: 50px;
 }
+.mainproduct > p {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18px;
+    padding-top: 10px;
+}
 .greencontainer {
     border: 1px solid #cccccc;
     border-left: 19px solid #00a300;
@@ -319,4 +325,73 @@ input[type=search] {
     padding-bottom: 10px;
     padding-left: 30px;
     padding-right: 25px;
+}
+.headfooter {
+    height: 74px;
+    background-color: #c3325f;
+    margin-top: 25px;
+    position: relative;
+}
+.headfooter > p {
+    font-size: 18px;
+    color: #ffffff;
+    font-weight: 300;
+    padding-left: 52px;
+    padding-top: 16px;
+    line-height: 18px;
+}
+.headfooter::before {
+    content: url('../images/paper_plane.png');
+    top: 17px;
+    left: 16px;
+    position: absolute;
+}
+.footerform {
+    background-color: #f1f1f1;
+    padding-left: 17px;
+    padding-top: 15px;
+}
+.selectfooter {
+    width: 317px;
+    height: 37px;
+    outline: inherit;
+    border: 2px solid #bababa;
+    background-color: #ffffff;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    text-indent: 1px;
+    text-overflow: '';
+    background: url("../images/Layer_11.png") no-repeat right center;
+}
+.selectfooter::-ms-expand {
+    display: none;
+}
+input[type=name] {
+    width: 310px;
+    height: 31px;
+}
+input[type=email] {
+    width: 310px;
+    height: 31px;
+}
+input[type=tel] {
+    width: 310px;
+    height: 31px;
+}
+textarea {
+    width: 638px;
+    height: 129px;
+    resize: none;
+}
+footer input, textarea {
+    margin-top: 15px;
+    border: 2px solid #bababa;
+    background-color: #ffffff;
+    outline: inherit;
+    font-family: "Segoe UI";
+    font-size: 14px;  
+    font-weight: 400;
+    line-height: 14px;
+    color: #000000;
 }

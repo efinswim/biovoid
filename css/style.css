@@ -350,6 +350,7 @@ input[type=search] {
     background-color: #f1f1f1;
     padding-left: 17px;
     padding-top: 15px;
+    max-height: 600px;
 }
 .selectfooter {
     width: 317px;
@@ -380,11 +381,13 @@ input[type=tel] {
     height: 31px;
 }
 textarea {
-    width: 638px;
-    height: 129px;
+    width: 628px;
+    height: 136px;
     resize: none;
+    margin-top: 0px;
+    margin-left: 15px;
 }
-footer input, textarea {
+footer input {
     margin-top: 15px;
     border: 2px solid #bababa;
     background-color: #ffffff;
@@ -394,4 +397,34 @@ footer input, textarea {
     font-weight: 400;
     line-height: 14px;
     color: #000000;
+}
+footer textarea {
+    border: 2px solid #bababa;
+    background-color: #ffffff;
+    outline: inherit;
+    font-family: "Segoe UI";
+    font-size: 14px;  
+    font-weight: 400;
+    line-height: 14px;
+    color: #000000;
+}
+.floatleft {
+    float: left;
+}
+.buttonform {
+    width: 114px;
+    height: 36px;
+    background-color: #c3325f;
+    border: none;
+    color: #ffffff;
+    font-size: 12px;
+    margin-top: 15px;
+    margin-left: 16px;
+}
+.copyright {
+    margin-top: 28px;
+    background-color: #f1f1f1;
+    padding-left: 17px;
+    font-size: 12px;
+    padding-top: 15px;
 }

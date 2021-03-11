@@ -86,11 +86,23 @@ nav > ul > li > a {
 nav ul li a:hover {
     color: #d44a26;
 }
+nav ul li a::nth-child(4n):hover {
+    color: #2d89ef;
+}
 .li1 {
     border-bottom: 2px solid  #2d89ef;
 }
 .li2 {
     border-bottom: 2px solid #603cba;
+    position: relative;
+}
+.li2::after {
+    content: "";
+    top: 36px;
+    left: 46px;
+    position: absolute;
+    border: 6px solid transparent;
+    border-top-color: #603cba;
 }
 .li3 {
     border-bottom: 2px solid #01a31c;
@@ -335,6 +347,15 @@ input[type=search] {
     margin-top: 25px;
     position: relative;
 }
+.headfooter::after {
+    content: "";
+    top: 63px;
+    left: 26px;
+    position: absolute;
+    border: 10px solid transparent;
+    border-top-color: #c3325f;
+    transform: rotate(125deg);
+}
 .headfooter > p {
     font-size: 18px;
     color: #ffffff;
@@ -397,7 +418,7 @@ footer input {
     color: #000000;
     font-family: "Segoe UI";
     font-size: 14px;  
-    font-weight: 400;
+    font-weight: bold;
     line-height: 14px;
 }
 footer textarea {
@@ -409,6 +430,7 @@ footer textarea {
     font-weight: 400;
     line-height: 14px;
     color: #000000;
+    font-weight: bold;
 }
 .floatleft {
     float: left;

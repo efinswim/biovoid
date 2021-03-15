@@ -83,18 +83,21 @@ nav > ul > li > a {
     text-decoration: none;
     color: #595756;
 }
-nav ul li a:hover {
+/* nav ul li a:hover {
     color: #d44a26;
-}
-nav ul li a::nth-child(4n):hover {
-    color: #2d89ef;
-}
+} */
 .li1 {
     border-bottom: 2px solid  #2d89ef;
+}
+.hover1:hover {
+    color: #2d89ef;
 }
 .li2 {
     border-bottom: 2px solid #603cba;
     position: relative;
+}
+.hover2:hover {
+    color: #603cba;
 }
 .li2::after {
     content: "";
@@ -107,11 +110,20 @@ nav ul li a::nth-child(4n):hover {
 .li3 {
     border-bottom: 2px solid #01a31c;
 }
+.hover3:hover {
+    color: #01a31c;
+}
 .li4 {
     border-bottom: 2px solid #d44a26;
 }
+.hover4:hover {
+    color: #d44a26;
+}
 .li5 {
     border-bottom: 2px solid #f0a427;
+}
+.hover5:hover {
+    color: #f0a427;
 }
 main {
     padding-top: 25px;
@@ -270,6 +282,21 @@ input[type=search] {
     padding-left: 67px;
     padding-top: 5px;
 }
+.yellowlink {
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    padding: 3px;
+    margin: 5px;
+    transform: rotate(-45deg);
+    position: absolute;
+    top: 135px;
+    left: 124px;
+}
+.yellowsect:before {
+    border-radius: 27px;
+    border: solid white;
+    position: absolute;
+}
 .imgwrapper {
     position: relative;
     width: 486px;
@@ -374,8 +401,9 @@ input[type=search] {
     background-color: #f1f1f1;
     padding-left: 17px;
     padding-top: 15px;
+    padding-bottom: 15px;
 }
-.selectfooter {
+/* .selectfooter {
     width: 317px;
     height: 37px;
     outline: inherit;
@@ -387,9 +415,29 @@ input[type=search] {
     text-indent: 1px;
     text-overflow: '';
     background: url("../images/Layer_11.png") no-repeat right center;
+} */
+.select {
+    appearance: none;
+    position: relative;
 }
-.selectfooter::-ms-expand {
-    display: none;
+.select:after {
+    content: "";
+    display: block;
+    border-style: solid;
+    border-width: 5px 5px 0 5px;
+    border-color: #000000 transparent transparent transparent;
+    position: absolute;
+    top: 15px;
+    right: 10px;
+}
+.select select {
+    display: block;
+    width: 315px;
+    height: 36px;
+    background: white;
+    border: 2px solid #bababa;
+    appearance: none;
+    outline: inherit;
 }
 input[type=name] {
     width: 310px;
@@ -418,8 +466,13 @@ footer input {
     color: #000000;
     font-family: "Segoe UI";
     font-size: 14px;  
-    font-weight: bold;
     line-height: 14px;
+}
+input::placeholder {
+    color: #444;
+    font-size: 14px;
+    font-family: "Segoe UI";  
+    opacity: 1;
 }
 footer textarea {
     border: 2px solid #bababa;
@@ -430,7 +483,10 @@ footer textarea {
     font-weight: 400;
     line-height: 14px;
     color: #000000;
-    font-weight: bold;
+}
+textarea::placeholder {
+    color: #444;
+    opacity: 1;
 }
 .floatleft {
     float: left;

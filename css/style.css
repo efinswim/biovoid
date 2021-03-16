@@ -183,21 +183,36 @@ input[type=search] {
     padding-left: 70px;
     padding-top: 15px;
 }
-.nextpage {
-    border: none;
-    outline: none;
-    padding-left: 0px;
-    padding-right: 0px;
-}
-.nextpage::before {
-    content: url('../images/Shape_1.png');
-    left: 443px;
-    top: 72px;
+.bluelink {
     position: absolute;
     width: 27px;
     height: 27px;
     border: 2px solid #ffffff;
     border-radius: 27px;
+    right: 10px;
+    bottom: 10px;
+}
+.bluelink::before {
+    content: "";
+    border: solid white;
+    border-width: 0 13px 2px 3px;
+    display: inline-block;
+    position: absolute;
+    top: 12px;
+    left: 6px;
+}
+.bluelink::after {
+    content: "";
+    width: 7px;
+    height: 7px;
+    border-top: 2px solid white;
+    border-right: 2px solid white;
+    display: inline-block;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    position: absolute;
+    bottom: 10px;
+    right: 6px;
 }
 .gb {
     float: left;
@@ -283,19 +298,35 @@ input[type=search] {
     padding-top: 5px;
 }
 .yellowlink {
-    border: solid white;
-    border-width: 0 3px 3px 0;
-    padding: 3px;
-    margin: 5px;
-    transform: rotate(-45deg);
     position: absolute;
-    top: 135px;
-    left: 124px;
-}
-.yellowsect:before {
+    width: 27px;
+    height: 27px;
+    border: 2px solid #ffffff;
     border-radius: 27px;
+    right: 10px;
+    bottom: 10px;
+}
+.yellowlink::before {
+    content: "";
     border: solid white;
+    border-width: 0 13px 2px 3px;
+    display: inline-block;
     position: absolute;
+    top: 12px;
+    left: 6px;
+}
+.yellowlink::after {
+    content: "";
+    width: 7px;
+    height: 7px;
+    border-top: 2px solid white;
+    border-right: 2px solid white;
+    display: inline-block;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    position: absolute;
+    bottom: 10px;
+    right: 6px;
 }
 .imgwrapper {
     position: relative;

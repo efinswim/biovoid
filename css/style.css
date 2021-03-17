@@ -148,18 +148,42 @@ main > h1 {
     outline: inherit;
     float: left;
     text-align: left;
+    margin-top: 5px;
 }
 input[type=search] {
     margin-left: 27px;
     background-color: white;
-    background-image: url('../images/search.png');
-    background-position: 95%;
-    background-repeat: no-repeat;
     padding-left: 15px;
     width: 229px;
     height: 38px;
     border: 1px solid #cccccc;
     outline: inherit;
+    position: absolute;
+    margin-top: 5px;
+}
+.buttonsearch {
+    position: relative;
+    width: 6px;
+    height: 21px;
+    border: 3px solid #ccc;
+    outline: none;
+    background: transparent;
+    border-radius: 28px;
+    left: 217px;
+    top: 8px;
+    cursor: pointer;
+}
+.buttonsearch::before {
+    content: "";
+    width: 12px;
+    height: 7px;
+    border-top: 3px solid #cccccc;
+    display: inline-block;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    position: absolute;
+    top: 16px;
+    left: 10px;
 }
 .buttonsmain {
     position: absolute;
@@ -191,6 +215,7 @@ input[type=search] {
     border-radius: 27px;
     right: 10px;
     bottom: 10px;
+    cursor: pointer;
 }
 .bluelink::before {
     content: "";
@@ -305,6 +330,7 @@ input[type=search] {
     border-radius: 27px;
     right: 10px;
     bottom: 10px;
+    cursor: pointer;
 }
 .yellowlink::before {
     content: "";
@@ -399,13 +425,13 @@ input[type=search] {
     padding-left: 30px;
     padding-right: 25px;
 }
-.headfooter {
+.formheader {
     height: 74px;
     background-color: #c3325f;
     margin-top: 25px;
     position: relative;
 }
-.headfooter::after {
+.formheader::after {
     content: "";
     top: 63px;
     left: 26px;
@@ -414,7 +440,7 @@ input[type=search] {
     border-top-color: #c3325f;
     transform: rotate(125deg);
 }
-.headfooter > p {
+.formheader > p {
     font-size: 18px;
     color: #ffffff;
     font-weight: 300;
@@ -422,7 +448,7 @@ input[type=search] {
     padding-top: 16px;
     line-height: 18px;
 }
-.headfooter::before {
+.formheader::before {
     content: url('../images/paper_plane.png');
     top: 17px;
     left: 16px;
@@ -431,25 +457,24 @@ input[type=search] {
 .footerform {
     background-color: #f1f1f1;
     padding-left: 17px;
-    padding-top: 15px;
-    padding-bottom: 15px;
+    padding-top: 20px;
+    padding-bottom: 12px;
+    height: 200px;
 }
-/* .selectfooter {
-    width: 317px;
-    height: 37px;
-    outline: inherit;
-    border: 2px solid #bababa;
-    background-color: #ffffff;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
-    text-indent: 1px;
-    text-overflow: '';
-    background: url("../images/Layer_11.png") no-repeat right center;
-} */
 .select {
     appearance: none;
     position: relative;
+}
+.select:before {
+    content: "";
+    border: solid transparent;
+    border-image: linear-gradient(#F5F5F5, #C0C0C0);
+    border-width: 14px 13px 0px 5px;
+    display: inline-block;
+    position: absolute;
+    top: 10px;
+    right: 6px;
+    box-shadow: 0px 0px 0px 1px #000000;
 }
 .select:after {
     content: "";
@@ -463,7 +488,7 @@ input[type=search] {
 }
 .select select {
     display: block;
-    width: 315px;
+    width: 320px;
     height: 36px;
     background: white;
     border: 2px solid #bababa;
@@ -473,14 +498,17 @@ input[type=search] {
 input[type=name] {
     width: 310px;
     height: 31px;
+    margin-top: 15px;
 }
 input[type=email] {
     width: 310px;
     height: 31px;
+    margin-top: 15px;
 }
 input[type=tel] {
     width: 310px;
     height: 31px;
+    margin-top: 15px;
 }
 textarea {
     width: 628px;
@@ -489,8 +517,7 @@ textarea {
     margin-top: 0px;
     margin-left: 15px;
 }
-footer input {
-    margin-top: 15px;
+form input {
     border: 2px solid #bababa;
     background-color: #ffffff;
     outline: inherit;
@@ -498,6 +525,7 @@ footer input {
     font-family: "Segoe UI";
     font-size: 14px;  
     line-height: 14px;
+    padding-left: 5px;
 }
 input::placeholder {
     color: #444;
@@ -505,7 +533,7 @@ input::placeholder {
     font-family: "Segoe UI";  
     opacity: 1;
 }
-footer textarea {
+form textarea {
     border: 2px solid #bababa;
     background-color: #ffffff;
     outline: inherit;
@@ -514,6 +542,7 @@ footer textarea {
     font-weight: 400;
     line-height: 14px;
     color: #000000;
+    padding-left: 5px;
 }
 textarea::placeholder {
     color: #444;

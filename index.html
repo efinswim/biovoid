@@ -24,8 +24,9 @@
         <form>
             <button class="downloadprice"><img src="images/copy_1.png" align="left" style="padding-right: 8px"  />Скачать наш прайс</button>
         </form>
-        <form>
+        <form class="clearfix" haction="" method="get">
             <input type="search" placeholder="Поиск по сайту" />
+            <button class="buttonsearch" type="submit"></button>
         </form>
         <div class="clearfix">
             <div class="buttonsmain">
@@ -69,11 +70,11 @@
         <h2>UART/RS232</h2>
         <p>Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов, используя Lorem Ipsum для распечатки образцов. Lorem Ipsum не только успешно пережил без заметных изменений пять веков, но и перешагнул в электронный дизайн.</p>
     </section>
-    <footer class="clearfix">
-        <div class="headfooter">
-            <p>Форма обратной связи разработка<br> модификация или просто вопросы по модулю...</p>
-        </div>
-            <form class="footerform clearfix">
+            <form class="clearfix">
+                <div class="formheader">
+                    <p>Форма обратной связи разработка<br> модификация или просто вопросы по модулю...</p>
+                </div>
+                <div class="footerform">
                 <div class="floatleft clearfix">
                     <div class="select">
                         <select>
@@ -90,7 +91,9 @@
                 <div class="floatleft"><textarea placeholder="Сообщение *"></textarea></div>
                 <div class="floatleft"><input type="tel" placeholder="Телефон" /></div>
                 <div class="floatleft"><button class="buttonform" type="button">Отправить</button></div>
+            </div>
             </form>
+    <footer class="clearfix">
         <div class="copyright"><p>© 2012-2013 Biovoid. Все права защищены.</p></div>
     </footer>
 </body>
